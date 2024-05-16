@@ -1,0 +1,124 @@
+global:
+    seed: 0
+#     norm_type: 'batch'
+
+egnn:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0
+    weight_decay: 0.000
+
+symgnn:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0.25
+    weight_decay: 0.000
+
+QM9:
+    num_layers: 3
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0.1
+    weight_decay: 0.000
+
+ab_symgnn:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 1
+    dropout_ratio: 0.30
+    weight_decay: 0.0000
+
+gcn_edge:   
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0.000
+    weight_decay: 0.0000
+
+mlp:
+    num_layers: 3
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0
+    weight_decay: 0.000
+
+gcn:
+    num_layers: 4
+    ncate_dim: 1
+    ncont_dim: 3
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    dropout_ratio: 0
+    weight_decay: 0.000
+
+schnet:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 64
+    hidden_dim: 64
+    out_dim: 1
+    efeat_dim: 1
+    dropout_ratio: 0.00
+    weight_decay: 0.0000
+
+dimenet:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 64
+    hidden_dim: 64
+    out_dim: 1
+    efeat_dim: 1
+    dropout_ratio: 0.30
+    weight_decay: 0.0000
+
+MGCN:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 64
+    hidden_dim: 64
+    out_dim: 1
+    efeat_dim: 1
+    dropout_ratio: 0.30
+    weight_decay: 0.0000
+
+
+MPNN:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 1
+    dropout_ratio: 0.30
+    weight_decay: 0.0000
+
+equiformer:
+    num_layers: 4
+    nfeat_dim: 1
+    emb_dim: 32
+    hidden_dim: 32
+    out_dim: 1
+    efeat_dim: 3
+    dropout_ratio: 0.25
+    weight_decay: 0.000
