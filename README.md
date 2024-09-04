@@ -12,7 +12,7 @@ We integrate a noval symmetrization module to handle E(3)-invariance on top of a
 
 <p align="center">
   <br />
-  <img src="imgs/model.png" width="1000">
+  <img src="imgs/model_flow.png" width="1000">
   <br />
 </p>
 
@@ -22,7 +22,7 @@ We integrate a noval symmetrization module to handle E(3)-invariance on top of a
 The raw dataset can be found under the folder `datasets/raw_data`, the script `construct_graph.py` can be used to construct the dgl graphs consistent with the setting in the paper.
 
 ### Models
-All models and baselines implementatition can be found in `models.py`. We borrow the `MGCN`, `MPNN`, and `SchNet` implementation from the DIG library.
+All models and baselines implementatition can be found in `models.py` under models folder. We borrow the `MGCN`, `MPNN`, and `SchNet` implementation from the DIG library.
 The GNNExplainer is adopted from the DGL library. The training routine can be found in `train.py`, and the model config can all be located in `train.conf.yaml`.
 
 ### Usage
@@ -35,8 +35,12 @@ python3 train.py --model_name='symgnn' --output_dir='./outputs/symgnn' --device=
 
 Comparing with other baselines and ablations, SymGNN shows supriority both in terms of prediction score and training speed.
 
-
-|               | Methods                        | Training Scores         | Testing Scores          |
+<p align="center">
+  <br />
+  <img src="imgs/evaluation.png" width="1000">
+  <br />
+</p>
+<!-- |               | Methods                        | Cu64       | Testing Scores          |
 |---------------|--------------------------------|-------------------------|-------------------------|
 | MD            | Local Sampling                 | -                       | 0.3614                  |
 | **Non-Invariant ML** |                            |                         |                         |
@@ -53,6 +57,7 @@ Comparing with other baselines and ablations, SymGNN shows supriority both in te
 | **Ours**       |                                |                         |                         |
 |               | SymGNN                         | 0.8368 ± 0.0027          | **0.7859 ± 0.0056**     |
 |               | SymGNN w/o symmetrization      | 0.8736 ± 0.0007          | 0.2669 ± 0.0371         |
+|               | Data Augmentation              | 0.6614 ± 0.0285          |  -->
 
 ## Explanation Results
 
@@ -60,6 +65,6 @@ We connect results from GNNExplainer with topological data analysis (TDA), build
 
 <p align="center">
   <br />
-  <img src="imgs/high_mid_low.png" width="1000">
+  <img src="imgs/explanation.png" width="1000">
   <br />
 </p>
